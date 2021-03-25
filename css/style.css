@@ -1,0 +1,292 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0px auto;
+}
+
+.header{
+	width: 100%;
+}
+
+.container{
+	width: 1140px;
+	margin: 0px auto;
+}
+
+.navbar{
+	display: flex;
+	padding: 24px 0;
+}
+
+.logo{
+	flex-basis: 20%;
+}
+
+.logo img{
+	margin-top: 12px;
+}
+
+.menu{
+	flex-basis: 60%;
+}
+
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+	line-height: 30px;
+    margin-right: 22px;
+}
+
+.menu ul li a{
+	font-family: 'poppins' , sans-serif;
+	color: #000;
+}
+
+.header-btn{
+	flex-basis: 30%;
+	text-align: right;
+}
+
+.header-btn button{
+	background: transparent;
+    padding: 18px 42px;
+    border: 2px solid #ff6162;
+    color: #ff6162;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px 5px 50px 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-btn button::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background: #ff6162;
+	z-index: -2;
+	border-radius: 50px 5px 50px 5px;
+}
+
+.header-btn button:hover{
+	color: white;
+	border: none;
+}
+
+.header-btn button:hover::before{
+	height: 100%;
+	transition: 0.6s;
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+}
+
+.content{
+	display: flex;
+	align-items: center;
+	height: 80vh;
+}	
+
+.left h1{
+	margin-top: 0px;
+	font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 36px;
+}
+
+.left p{
+	font-family: 'Poppins', sans-serif;
+	color: #9c9c9c;
+	margin-bottom: 36px;
+}
+
+.left a i{
+	height: 50px;
+    width: 50px;
+    border: 3px solid #9c9c9c;
+    border-radius: 50%;
+    color: #9c9c9c;
+    text-align: center;
+    line-height: 52px;
+}
+
+.left a i:hover{
+	background: #ff61621c;
+    color: #ff6162;
+    border: none;
+}
+
+.right img{
+	animation: mymove 6s infinite;
+}
+@keyframes mymove {
+  50% {border: 20px solid #ff6162;}
+}
+
+.projects{
+	width: 100%;
+	text-align: center;
+}
+
+.projects h1{
+	margin-top: 0px;
+	font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+}
+
+.projects p{
+	font-family: 'Poppins', sans-serif;
+	color: #9c9c9c;
+	margin-bottom: 45px;
+}
+
+.gallery{
+	display: flex;
+}
+
+.catagory{
+	margin: 16px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.catagory img:hover{
+	box-shadow: 18px 20px 20px 3px rgb(0 0 0 / 15%);
+    transition: 0.6s;
+}
+
+.catagory h3{
+	font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+}
+
+.features{
+	width: 100%;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.features h1{
+	margin:0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.features p{
+	font-family: 'Poppins', sans-serif;
+    margin: 0px 0px 24px;
+    color: #a0a0a0;
+}
+
+.features-gallery{
+	display: flex;
+}
+
+.item{
+	background-color: #f5f5f5;
+	border-radius: 2%;
+	margin: 16px;
+    padding: 18px;
+    width: 30%;
+}
+
+.item:hover{
+	background-color: #292640;
+	color: white
+}
+
+.item a i{
+	height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    color: #ff6162;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.item h6{
+	font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.item p{
+	font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #a0a0a0;
+    margin: 10px;
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	background-color: #292640;
+	padding: 80px 0px 50px 0px;
+}
+
+.footer-content h1{
+	margin-top: 0px;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 56px;
+    line-height: 66px;
+}
+
+.footer-btn button{
+	background: transparent;
+    padding: 18px 42px;
+    border: 2px solid #ff6162;
+    color: #ff6162;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px 5px 50px 5px;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-btn button::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background: #ff6162;
+	z-index: -2;
+	border-radius: 50px 5px 50px 5px;
+}
+
+.footer-btn button:hover{
+	color: white;
+	border: none;
+}
+
+.footer-btn button:hover::before{
+	height: 100%;
+	transition: 0.6s;
+}
+
+
